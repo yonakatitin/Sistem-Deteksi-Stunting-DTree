@@ -5,23 +5,32 @@ import numpy as np
 from sklearn.model_selection import train_test_split 
 
 st.write("""
-    # Prediksi Stunting
+    # Sistem Deteksi Stunting dengan Decision Tree
 """)
 
-st.image('./1A.jpg')
+st.image('./banner.png')
 
 st.write( """
     ## Keterangan Data Yang Diinputkan
-    1. Gender: Jenis kelamin
-    2. Age: Umur
-    3. Hypertension:
-       0 = tidak memimiliki hipertensi
-       1 = memiliki hipertensi
-    4. Heart Disease:
-       0 = tidak memiliki hipertensi
-       1 = memiliki hipertensi
-    5. Average Glucose Level: Rata-rata kadar glukosa dalam darah
-    6. BMI: Body mass index
+    1. jk: Jenis kelamin
+       0 = perempuan
+       1 = laki-laki
+    2. umur: Umur
+       1 = 0-10 bulan
+       2 = 11-20 bulan
+       3 = 21-30 bulan
+       4 = 31-40 bulan
+       5 = 41-50 bulan
+       6 = 51-60 bulan
+    3. bb/u: Berat Badan terhadap Umur
+       1 = normal
+       2 = kurang
+       3 = risiko bb lebih
+       4 = lebih
+    4. tb/u: Tinggi Badan terhadap Umur
+       1 = normal
+       2 = pendek
+       3 = sangat pendek
 
 """)
 
@@ -53,17 +62,14 @@ m = DecisionTreeClassifier()
 m.fit(X_train_ss_scaled, y_train)
 y_pred_dt = m.predict(X_test)
 
-st.write("Dengan Menggunakan Decision Tree Nilai Akurasinya Adalah:")
-st.write(accuracy_score(y_test, y_pred_dt))
-
 st.write("# Masukkan data")
 
 
 form = st.form(key='my-form')
-inputGender = form.number_input("Jenis kelamin (1 = male, 0 = female): ", 0)
-inputAge = form.number_input("Umur: ", 0)
-inputBBU = form.number_input("BB/U (1 = normal, 2 = kurang, 3 = risiko bb lebih, 4 = lebih): ", 0)
-inputTBU = form.number_input("TB/U (1 = normal, 2 = pendek, 3 = sangat pendek): ", 0)
+inputGender = form.number_input("Jenis kelamin (1 = laki-laki, 0 = perempuan): ", 0)
+inputAge = form.number_input("Umur (1 = 0-10 bln, 2 = 11-20 bln, 3 = 21-30 bln, 4 = 31-40 bln, 5 = 41-50 bln, 6 = 51-60 bln): ", 0)
+inputBBU = form.number_input("Berat Badan terhadap Umur (1 = normal, 2 = kurang, 3 = risiko bb lebih, 4 = lebih): ", 0)
+inputTBU = form.number_input("Tinggi Badan terhadap Umur (1 = normal, 2 = pendek, 3 = sangat pendek): ", 0)
 submit = form.form_submit_button('Submit')
 
 completeData = np.array([inputGender, inputAge, inputBBU, 
@@ -85,5 +91,5 @@ if submit:
         result = 'Gizi Lebih'
     else:
         result = 'Obesitas'
-    st.write(result)
+    st.success(f"{result}")
     
