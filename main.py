@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split 
 
 st.write("""
-    # Prediksi Stroke
+    # Prediksi Stunting
 """)
 
 st.image('./1A.jpg')
@@ -32,27 +32,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.tree import DecisionTreeClassifier
 
-df = pd.read_csv('stroke.csv')
-
-# replace data kosong
-df['bmi'].fillna(df['bmi'].mean(), inplace = True)
-
-# hapus kolom id
-df.drop('id', axis = 1,inplace = True)
-
-# handling categorical features
-en = LabelEncoder()
-
-cols = ['gender']
-for col in cols:
-  df[col] = en.fit_transform(df[col])
+df = pd.read_csv('stunting.csv')
 
 # menentukan parameter x dan y
-x = df.drop(['stroke', 'ever_married', 'work_type', 'Residence_type', 'smoking_status'], axis = 'columns')
-y = df['stroke']
+x = df.drop(['bb/tb'], axis = 'columns')
+y = df['bb/tb']
 
 # train test split
-X_train, X_test, y_train, y_test = train_test_split(x.values, y.values, test_size=0.2, random_state=69)
+X_train, X_test, y_train, y_test = train_test_split(x.values, y.values, test_size=0.1, random_state=1)
 
 from sklearn.preprocessing import StandardScaler 
 
@@ -75,14 +62,12 @@ st.write("# Masukkan data")
 form = st.form(key='my-form')
 inputGender = form.number_input("Jenis kelamin (1 = male, 0 = female): ", 0)
 inputAge = form.number_input("Umur: ", 0)
-inputHyper = form.number_input("Apakah mempunyai hipertensi? (1 = ya, 0 = tidak): ", 0)
-inputHD = form.number_input("Apakah mempunyai penyakit jantung? (1 = ya, 0 = tidak): ", 0)
-inputGlucose = form.number_input("Rata-rata kadar glukosa: ", 0)
-inputBMI = form.number_input("BMI: ", 0)
+inputBBU = form.number_input("BB/U (1 = normal, 2 = kurang, 3 = risiko bb lebih, 4 = lebih): ", 0)
+inputTBU = form.number_input("TB/U (1 = normal, 2 = pendek, 3 = sangat pendek): ", 0)
 submit = form.form_submit_button('Submit')
 
-completeData = np.array([inputGender, inputAge, inputHyper, 
-                        inputHD, inputGlucose, inputBMI]).reshape(1, -1)
+completeData = np.array([inputGender, inputAge, inputBBU, 
+                        inputTBU]).reshape(1, -1)
 scaledData = ss_train_test.transform(completeData)
 
 
@@ -91,8 +76,14 @@ st.write('Tekan Submit Untuk Melihat Hasil Prediksi')
 if submit:
     prediction = m.predict(scaledData)
     if prediction == 1 :
-        result = 'Stroke'
+        result = 'Gizi Baik'
+    else if prediction == 2 :
+        result = 'Gizi Kurang'
+    else if prediction == 3 :
+        result = 'Risiko Gizi Lebih'
+    else if prediction == 4 :
+        result = 'Gizi Lebih'
     else:
-        result = 'Sehat'
+        result = 'Obesitas'
     st.write(result)
     
