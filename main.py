@@ -10,6 +10,10 @@ st.write("""
 
 st.image('./banner.png')
 
+st.write("""
+    ### https://peraturan.bpk.go.id/Home/Details/152505/permenkes-no-2-tahun-2020
+""")
+
 st.write( """
     ## Keterangan Data Yang Diinputkan
     1. jk: Jenis kelamin\n
