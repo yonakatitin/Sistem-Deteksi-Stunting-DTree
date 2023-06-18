@@ -77,11 +77,11 @@ if submit:
     prediction = m.predict(scaledData)
     if prediction == 1 :
         result = 'Gizi Baik'
-    else if prediction == 2 :
+    elif prediction == 2 :
         result = 'Gizi Kurang'
-    else if prediction == 3 :
+    elif prediction == 3 :
         result = 'Risiko Gizi Lebih'
-    else if prediction == 4 :
+    elif prediction == 4 :
         result = 'Gizi Lebih'
     else:
         result = 'Obesitas'
