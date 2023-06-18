@@ -13,24 +13,24 @@ st.image('./banner.png')
 st.write( """
     ## Keterangan Data Yang Diinputkan
     1. jk: Jenis kelamin
-       0 = perempuan
-       1 = laki-laki
+        • 0 = perempuan
+        • 1 = laki-laki
     2. umur: Umur
-       1 = 0-10 bulan
-       2 = 11-20 bulan
-       3 = 21-30 bulan
-       4 = 31-40 bulan
-       5 = 41-50 bulan
-       6 = 51-60 bulan
+        • 1 = 0-10 bulan
+        • 2 = 11-20 bulan
+        • 3 = 21-30 bulan
+        • 4 = 31-40 bulan
+        • 5 = 41-50 bulan
+        • 6 = 51-60 bulan
     3. bb/u: Berat Badan terhadap Umur
-       1 = normal
-       2 = kurang
-       3 = risiko bb lebih
-       4 = lebih
+        • 1 = normal
+        • 2 = kurang
+        • 3 = risiko bb lebih
+        • 4 = lebih
     4. tb/u: Tinggi Badan terhadap Umur
-       1 = normal
-       2 = pendek
-       3 = sangat pendek
+        • 1 = normal
+        • 2 = pendek
+        • 3 = sangat pendek
 
 """)
 
@@ -84,7 +84,7 @@ if submit:
     if prediction == 1 :
         result = 'Gizi Baik'
     elif prediction == 2 :
-        result = 'Gizi Kurang'
+        result = 'Gizi Kurang => Stunting'
     elif prediction == 3 :
         result = 'Risiko Gizi Lebih'
     elif prediction == 4 :
