@@ -11,7 +11,7 @@ st.write("""
 st.image('./banner.png')
 
 st.write("""
-    ## Peraturan Menteri Kesehatan tentang Standar Antropometri Anak 
+    ###### Peraturan Menteri Kesehatan tentang Standar Antropometri Anak 
     https://peraturan.bpk.go.id/Home/Details/152505/permenkes-no-2-tahun-2020
 """)
 
