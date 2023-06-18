@@ -12,24 +12,24 @@ st.image('./banner.png')
 
 st.write( """
     ## Keterangan Data Yang Diinputkan
-    1. jk: Jenis kelamin
-        • 0 = perempuan
+    1. jk: Jenis kelamin\n
+        • 0 = perempuan\n
         • 1 = laki-laki
     2. umur: Umur
-        • 1 = 0-10 bulan
-        • 2 = 11-20 bulan
-        • 3 = 21-30 bulan
-        • 4 = 31-40 bulan
-        • 5 = 41-50 bulan
+        • 1 = 0-10 bulan\n
+        • 2 = 11-20 bulan\n
+        • 3 = 21-30 bulan\n
+        • 4 = 31-40 bulan\n
+        • 5 = 41-50 bulan\n
         • 6 = 51-60 bulan
     3. bb/u: Berat Badan terhadap Umur
-        • 1 = normal
-        • 2 = kurang
-        • 3 = risiko bb lebih
+        • 1 = normal\n
+        • 2 = kurang\n
+        • 3 = risiko bb lebih\n
         • 4 = lebih
     4. tb/u: Tinggi Badan terhadap Umur
-        • 1 = normal
-        • 2 = pendek
+        • 1 = normal\n
+        • 2 = pendek\n
         • 3 = sangat pendek
 
 """)
