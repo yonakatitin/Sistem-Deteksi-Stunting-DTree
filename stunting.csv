@@ -1,0 +1,112 @@
+jk,umur,bb/u,tb/u,bb/tb
+0,0-10,normal,pendek,gizi lebih
+1,0-10,normal,normal,gizi baik
+0,0-10,normal,normal,gizi baik
+1,0-10,kurang,pendek,gizi kurang
+1,11-20,normal,normal,gizi baik
+0,11-20,normal,normal,gizi baik
+0,11-20,normal,normal,gizi baik
+0,21-30,normal,normal,gizi baik
+0,21-30,normal,normal,gizi baik
+0,21-30,normal,normal,gizi baik
+0,21-30,normal,sangat pendek,risiko gizi lebih
+1,21-30,normal,pendek,gizi lebih
+1,21-30,normal,normal,gizi baik
+0,21-30,normal,normal,gizi baik
+0,21-30,normal,normal,gizi baik
+0,21-30,normal,pendek,gizi baik
+0,21-30,normal,normal,gizi baik
+1,21-30,normal,normal,gizi baik
+1,21-30,kurang,sangat pendek,gizi baik
+1,21-30,risiko bb lebih,normal,gizi lebih
+1,21-30,normal,normal,gizi baik
+0,31-40,normal,normal,gizi baik
+0,31-40,normal,sangat pendek,gizi lebih
+0,31-40,normal,sangat pendek,obesitas
+0,31-40,normal,normal,gizi baik
+0,31-40,normal,sangat pendek,gizi lebih
+1,31-40,normal,sangat pendek,gizi lebih
+1,31-40,normal,pendek,risiko gizi lebih
+0,31-40,normal,normal,gizi baik
+0,31-40,lebih,normal,obesitas
+0,31-40,normal,normal,gizi baik
+0,31-40,normal,normal,risiko gizi lebih
+0,31-40,normal,pendek,obesitas
+0,31-40,normal,pendek,risiko gizi lebih
+0,31-40,normal,normal,gizi baik
+1,31-40,normal,normal,gizi baik
+1,31-40,normal,sangat pendek,gizi baik
+1,31-40,normal,sangat pendek,gizi baik
+1,31-40,normal,pendek,gizi baik
+0,31-40,normal,normal,gizi baik
+1,31-40,normal,normal,gizi baik
+1,31-40,normal,pendek,gizi baik
+1,31-40,normal,normal,gizi baik
+0,31-40,normal,normal,risiko gizi lebih
+0,31-40,kurang,pendek,gizi baik
+0,31-40,normal,normal,gizi baik
+1,31-40,normal,normal,gizi lebih
+0,31-40,normal,normal,gizi baik
+1,31-40,normal,normal,gizi baik
+1,31-40,normal,normal,gizi kurang
+1,31-40,normal,normal,gizi baik
+0,41-50,normal,normal,gizi baik
+0,41-50,kurang,pendek,gizi baik
+0,41-50,normal,normal,gizi baik
+1,41-50,normal,normal,gizi baik
+0,41-50,normal,normal,gizi baik
+0,41-50,normal,normal,gizi baik
+0,41-50,normal,sangat pendek,gizi lebih
+0,41-50,normal,normal,gizi baik
+0,41-50,normal,normal,gizi baik
+0,41-50,normal,normal,gizi baik
+0,41-50,normal,normal,gizi baik
+0,41-50,risiko bb lebih,normal,gizi lebih
+0,41-50,risiko bb lebih,normal,obesitas
+0,41-50,normal,nomal,gizi baik
+0,41-50,normal,pendek,gizi baik
+0,41-50,kurang,pendek,gizi baik
+1,41-50,normal,sangat pendek,obesitas
+1,41-50,normal,sangat pendek,risiko gizi lebih
+1,41-50,kurang,normal,gizi kurang
+1,41-50,normal,normal,risiko gizi lebih
+0,41-50,lebih,normal,risiko gizi lebih
+1,41-50,normal,normal,gizi baik
+1,51-60,normal,normal,gizi kurang
+1,51-60,normal,pendek,gizi baik
+1,51-60,risiko bb lebih,normal,risiko gizi lebih
+0,51-60,normal,normal,gizi baik
+0,51-60,normal,normal,gizi baik
+1,51-60,normal,normal,gizi baik
+0,51-60,normal,normal,gizi baik
+1,51-60,normal,normal,gizi baik
+1,51-60,risiko bb lebih,normal,obesitas
+1,51-60,normal,normal,gizi baik
+0,51-60,risiko bb lebih,normal,gizi lebih
+1,51-60,kurang,pendek,gizi baik
+1,51-60,normal,normal,gizi baik
+1,51-60,normal,normal,gizi baik
+1,51-60,kurang,pendek,gizi baik
+1,51-60,normal,normal,gizi baik
+0,51-60,normal,normal,gizi baik
+0,51-60,normal,normal,gizi baik
+1,51-60,normal,normal,gizi baik
+1,51-60,normal,normal,gizi baik
+1,51-60,normal,normal,gizi kurang
+1,51-60,normal,normal,gizi baik
+0,51-60,normal,normal,gizi baik
+0,51-60,kurang,normal,gizi kurang
+1,51-60,normal,pendek,gizi baik
+1,51-60,kurang,sangat pendek,gizi baik
+1,51-60,normal,normal,gizi baik
+1,51-60,kurang,pendek,normal
+1,41-50,normal,normal,gizi kurang
+0,21-30,normal,tinggi,normal
+0,21-30,kurang,normal,gizi kurang
+1,31-40,risiko bb lebih,pendek,obesitas
+0,0-10,normal,tinggi,normal
+1,1-10,normal,normal,normal
+1,11-20,normal,sangat pendek,gizi lebih
+1,0-10,normal,normal,normal
+1,0-10,risiko bb lebih,pendek,obesitas
+1,11-20,kurang,sangat pendek,gizi kurang
