@@ -20,23 +20,11 @@ st.write( """
     1. jk: Jenis kelamin\n
         0 = perempuan\n
         1 = laki-laki
-    2. umur: Umur\n
-        1 = 0-10 bulan\n
-        2 = 11-20 bulan\n
-        3 = 21-30 bulan\n
-        4 = 31-40 bulan\n
-        5 = 41-50 bulan\n
-        6 = 51-60 bulan
-    3. bb/u: Berat Badan terhadap Umur\n
-        1 = normal\n
-        2 = kurang\n
-        3 = risiko bb lebih\n
-        4 = lebih
-    4. tb/u: Tinggi Badan terhadap Umur\n
-        1 = normal\n
-        2 = pendek\n
-        3 = sangat pendek
-
+    2. umur: Umur (bulan)\n
+        0 - 60 bulan
+    3. bb: Berat Badan (kg)
+    4. tb: Tinggi Badan (cm)
+        
 """)
 
 #importing libraries
@@ -72,13 +60,13 @@ st.write("# Masukkan data")
 
 form = st.form(key='my-form')
 inputGender = form.number_input("Jenis kelamin (1 = laki-laki, 0 = perempuan): ", 0)
-inputAge = form.number_input("Umur (1 = 0-10 bln, 2 = 11-20 bln, 3 = 21-30 bln, 4 = 31-40 bln, 5 = 41-50 bln, 6 = 51-60 bln): ", 0)
-inputBBU = form.number_input("Berat Badan terhadap Umur (1 = normal, 2 = kurang, 3 = risiko bb lebih, 4 = lebih): ", min_value=0.0, step=0.1)
-inputTBU = form.number_input("Tinggi Badan terhadap Umur (1 = normal, 2 = pendek, 3 = sangat pendek): ", min_value=0.0, step=0.1)
+inputAge = form.number_input("Umur (0 - 60 bulan): ", min_value=0, max_value=60)
+inputBB = form.number_input("Berat Badan (kg): ", min_value=0.0, step=0.1)
+inputTB = form.number_input("Tinggi Badan (cm): ", min_value=0.0, step=0.1)
 submit = form.form_submit_button('Submit')
 
-completeData = np.array([inputGender, inputAge, inputBBU, 
-                        inputTBU]).reshape(1, -1)
+completeData = np.array([inputGender, inputAge, inputBB, 
+                        inputTB]).reshape(1, -1)
 scaledData = ss_train_test.transform(completeData)
 
 
