@@ -46,7 +46,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.tree import DecisionTreeClassifier
 
-df = pd.read_csv('stunting1.csv')
+df = pd.read_csv('Data_Antropometri_Anak.csv')
 
 # menentukan parameter x dan y
 x = df.drop(['bb/tb'], axis = 'columns')
